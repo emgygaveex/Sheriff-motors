@@ -1,0 +1,500 @@
+/* =========================
+  SHERIFF MOTORS WEBSITE
+  GLOBAL STYLES
+========================= */  
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+*{box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Main Content Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Global container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: o auto;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 32px;
+    color: #111111;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Website Header */
+.site-header {
+  background-color: #111111;
+  padding: 20px 0;
+  border-bottom: 3px solid #d4af37;  
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* website Logo */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #d4af37;
+}
+/* Navigation Menu */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color o.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #d4af37;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)), url("images/hero-car.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:#ffffff;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+/* Hero heading */
+.hero hi {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+/* Hero Descriptionn */
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #dddddd;
+    margin-bottom: 30px;
+}
+
+/* Hero Button */
+.btn {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #111111;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.services > .container > p {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Individual Service Cards */
+.service-card {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: 4px solid #d4af37;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+/* Why Choose Us Section */
+.why-us {
+    padding: 80px 0;
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 32px;
+    color: #d4af37;
+    margin-bottom: 40px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.reason {
+    padding: 30px;
+    background-color: #222222;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+}
+
+.reason h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.reason p {
+    color: #dddddd;
+    font-size: 16px;
+    line-height: 1,7;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px o;
+    background-color: #f5f5f5;
+    color: #222222;
+    text-align: center;
+}
+
+.contact > .container > p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-left: 4px solid #d4af37;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* Customer Enquiry Form */
+.enquiry-form {
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-top: 4px solid #d4af37;
+}
+
+.enquiry-form h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #111111;
+}
+
+.enquiry-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.enquiry-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.enquiry-form button {
+    padding: 14px;
+    background-color: #111111;
+    color: #d4af37;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.enquiry-form button:hover {
+    background-color: #d4af37;
+    color: #111111;
+}
+
+/* Website Footer */
+.footer {
+    background-color: #111111;
+    color: #dddddd;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 3px solid #d4af37;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px;
+}
+/* Responsive Design */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+
+    .vehicle-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero hi {
+        font-size: 36px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .reasons {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    .vehicle-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        font-size: 14px;
+    }
+
+    .hero hi {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .about,
+    .services,
+    .why-us,
+    .contact {
+        padding: 55px 0;
+    }
+
+    .service-card,
+    .reason {
+        padding: 25px;
+    }
+}
+
+/* Thank You Page */
+.thank-you {
+    min-height: 100vh;
+    background-color: #111111;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.thank-you-content {
+    max-width: 650px;
+}
+
+.thank-you h1 {
+    color: #d4af37;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.thank-you h2 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.thank-you p {
+    color: #dddddd;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Whatsapp Contact Button */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background-color: #25D366;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+/* Featured Vehicles Section */
+.featured-vehicles {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.featured-vehicles > .container > p {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+/* Vehicle Layout */
+.vehicle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual Vehicle Card */
+.vehicle-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background-color:#f5f5f5;
+    display: block;
+}
+
+.vehicle-info {
+    padding: 25px;
+}
+
+.vehicle-info h3 {
+    color: #111111;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.vehicle-info p {
+    color: #555555;
+    margin-bottom: 10px;
+}
