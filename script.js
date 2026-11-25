@@ -78,8 +78,24 @@ async function loadVehicles() {
         status.textContent = car.status || "Available";
         info.appendChild(status);
 
-        card.appendChild(info);
-        vehicleList.appendChild(card);
+       card.appendChild(info);
+
+const whatsappButton = document.createElement("a");
+
+const message = `Hello Sheriff Motors, I am interested in the ${car.name}, Year: ${car.year}, Price: KSh ${car.price ? Number(car.price).toLocaleString() : "Price on request"}. Is it still available?`;
+
+whatsappButton.href =
+    "https://wa.me/254741127198?text=" +
+    encodeURIComponent(message);
+
+whatsappButton.textContent = "Enquire on WhatsApp";
+whatsappButton.className = "whatsapp-enquire";
+whatsappButton.target = "_blank";
+whatsappButton.rel = "noopener noreferrer";
+
+info.appendChild(whatsappButton);
+
+vehicleList.appendChild(card);
     });
 }
 
